@@ -1,1 +1,0 @@
-"""Objective verification helpers."""

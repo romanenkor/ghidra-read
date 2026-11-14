@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "program": {
+    "name": "android.system.keystore2-V1-ndk.so",
+    "sha256": "f916eae2f399d89eb255f37074ec8ee8e56ecfb4b954f5c6a6a21d8eea9d0aeb",
+    "ghidra_version": "12.2",
+    "language_id": "AARCH64:LE:64:v8A",
+    "architecture": "AARCH64",
+    "format": "Executable and Linking Format (ELF)",
+    "image_base": "0x100000",
+    "input_path": "/home/roman/Documents/ChatGPT/androidcore/images/14/system/system/lib64/android.system.keystore2-V1-ndk.so"
+  },
+  "selector": {
+    "kind": "symbol",
+    "value": "_ZNK4aidl7android6system9keystore213KeyDescriptor13writeToParcelEP7AParcel"
+  },
+  "status": "ok",
+  "function": {
+    "name": "writeToParcel",
+    "qualified_name": "aidl::android::system::keystore2::KeyDescriptor::writeToParcel",
+    "address": "ram:0011a1e8",
+    "entry_va": "0x11a1e8"
+  },
+  "sections": {
+    "assembly": {
+      "status": "ok",
+      "data": [
+        {
+          "address": "ram:0011a1e8",
+          "text": "stp x29,x30,[sp, #-0x30]!"
+        },
+        {
+          "address": "ram:0011a1ec",
+          "text": "str x21,[sp, #0x10]"
+        },
+        {
+          "address": "ram:0011a1f0",
+          "text": "stp x20,x19,[sp, #0x20]"
+        },
+        {
+          "address": "ram:0011a1f4",
+          "text": "mov x29,sp"
+        },
+        {
+          "address": "ram:0011a1f8",
+          "text": "mov x21,x0"
+        },
+        {
+          "address": "ram:0011a1fc",
+          "text": "mov x0,x1"
+        },
+        {
+          "address": "ram:0011a200",
+          "text": "mov x19,x1"
+        },
+        {
+          "address": "ram:0011a204",
+          "text": "bl 0x0011b980"
+        },
+        {
+          "address": "ram:0011a208",
+          "text": "mov w20,w0"
+        },
+        {
+          "address": "ram:0011a20c",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a210",
+          "text": "mov w1,wzr"
+        },
+        {
+          "address": "ram:0011a214",
+          "text": "bl 0x0011b9e0"
+        },
+        {
+          "address": "ram:0011a218",
+          "text": "cbnz w0,0x0011a2ec"
+        },
+        {
+          "address": "ram:0011a21c",
+          "text": "ldr w1,[x21]"
+        },
+        {
+          "address": "ram:0011a220",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a224",
+          "text": "bl 0x0011b9e0"
+        },
+        {
+          "address": "ram:0011a228",
+          "text": "cbnz w0,0x0011a2ec"
+        },
+        {
+          "address": "ram:0011a22c",
+          "text": "ldr x1,[x21, #0x8]"
+        },
+        {
+          "address": "ram:0011a230",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a234",
+          "text": "bl 0x0011b9f0"
+        },
+        {
+          "address": "ram:0011a238",
+          "text": "cbnz w0,0x0011a2ec"
+        },
+        {
+          "address": "ram:0011a23c",
+          "text": "ldrb w8,[x21, #0x28]"
+        },
+        {
+          "address": "ram:0011a240",
+          "text": "cbz w8,0x0011a274"
+        },
+        {
+          "address": "ram:0011a244",
+          "text": "ldrb w8,[x21, #0x10]"
+        },
+        {
+          "address": "ram:0011a248",
+          "text": "add x11,x21,#0x11"
+        },
+        {
+          "address": "ram:0011a24c",
+          "text": "ldr x9,[x21, #0x20]"
+        },
+        {
+          "address": "ram:0011a250",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a254",
+          "text": "ldr w10,[x21, #0x18]"
+        },
+        {
+          "address": "ram:0011a258",
+          "text": "tst w8,#0x1"
+        },
+        {
+          "address": "ram:0011a25c",
+          "text": "lsr x8,x8,#0x1"
+        },
+        {
+          "address": "ram:0011a260",
+          "text": "csel x1,x11,x9,eq"
+        },
+        {
+          "address": "ram:0011a264",
+          "text": "csel w2,w8,w10,eq"
+        },
+        {
+          "address": "ram:0011a268",
+          "text": "bl 0x0011bbc0"
+        },
+        {
+          "address": "ram:0011a26c",
+          "text": "cbnz w0,0x0011a2ec"
+        },
+        {
+          "address": "ram:0011a270",
+          "text": "b 0x0011a288"
+        },
+        {
+          "address": "ram:0011a274",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a278",
+          "text": "mov x1,xzr"
+        },
+        {
+          "address": "ram:0011a27c",
+          "text": "mov w2,#0xffffffff"
+        },
+        {
+          "address": "ram:0011a280",
+          "text": "bl 0x0011bbc0"
+        },
+        {
+          "address": "ram:0011a284",
+          "text": "cbnz w0,0x0011a2ec"
+        },
+        {
+          "address": "ram:0011a288",
+          "text": "ldrb w8,[x21, #0x48]"
+        },
+        {
+          "address": "ram:0011a28c",
+          "text": "cbz w8,0x0011a2a4"
+        },
+        {
+          "address": "ram:0011a290",
+          "text": "ldr x1,[x21, #0x30]"
+        },
+        {
+          "address": "ram:0011a294",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a298",
+          "text": "ldr w8,[x21, #0x38]"
+        },
+        {
+          "address": "ram:0011a29c",
+          "text": "sub w2,w8,w1"
+        },
+        {
+          "address": "ram:0011a2a0",
+          "text": "b 0x0011a2b0"
+        },
+        {
+          "address": "ram:0011a2a4",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a2a8",
+          "text": "mov x1,xzr"
+        },
+        {
+          "address": "ram:0011a2ac",
+          "text": "mov w2,#0xffffffff"
+        },
+        {
+          "address": "ram:0011a2b0",
+          "text": "bl 0x0011bae0"
+        },
+        {
+          "address": "ram:0011a2b4",
+          "text": "cbnz w0,0x0011a2ec"
+        },
+        {
+          "address": "ram:0011a2b8",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a2bc",
+          "text": "bl 0x0011b980"
+        },
+        {
+          "address": "ram:0011a2c0",
+          "text": "mov w21,w0"
+        },
+        {
+          "address": "ram:0011a2c4",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a2c8",
+          "text": "mov w1,w20"
+        },
+        {
+          "address": "ram:0011a2cc",
+          "text": "bl 0x0011b9b0"
+        },
+        {
+          "address": "ram:0011a2d0",
+          "text": "sub w1,w21,w20"
+        },
+        {
+          "address": "ram:0011a2d4",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a2d8",
+          "text": "bl 0x0011b9e0"
+        },
+        {
+          "address": "ram:0011a2dc",
+          "text": "mov x0,x19"
+        },
+        {
+          "address": "ram:0011a2e0",
+          "text": "mov w1,w21"
+        },
+        {
+          "address": "ram:0011a2e4",
+          "text": "bl 0x0011b9b0"
+        },
+        {
+          "address": "ram:0011a2e8",
+          "text": "mov w0,wzr"
+        },
+        {
+          "address": "ram:0011a2ec",
+          "text": "ldp x20,x19,[sp, #0x20]"
+        },
+        {
+          "address": "ram:0011a2f0",
+          "text": "ldr x21,[sp, #0x10]"
+        },
+        {
+          "address": "ram:0011a2f4",
+          "text": "ldp x29,x30,[sp], #0x30"
+        },
+        {
+          "address": "ram:0011a2f8",
+          "text": "ret"
+        }
+      ]
+    },
+    "decompile": {
+      "status": "ok",
+      "data": "\n/* aidl::android::system::keystore2::KeyDescriptor::writeToParcel(AParcel*) const */\n\nundefined8 __thiscall\naidl::android::system::keystore2::KeyDescriptor::writeToParcel(KeyDescriptor *this,AParcel *param_1)\n\n{\n  uint uVar1;\n  KeyDescriptor *pKVar2;\n  bool bVar3;\n  int iVar4;\n  int iVar5;\n  undefined8 uVar6;\n  \n  iVar4 = AParcel_getDataPosition(param_1);\n  uVar6 = AParcel_writeInt32(param_1,0);\n  if ((((int)uVar6 == 0) &&\n      (uVar6 = AParcel_writeInt32(param_1,*(undefined4 *)this), (int)uVar6 == 0)) &&\n     (uVar6 = AParcel_writeInt64(param_1,*(undefined8 *)(this + 8)), (int)uVar6 == 0)) {\n    if (this[0x28] == (KeyDescriptor)0x0) {\n      uVar6 = AParcel_writeString(param_1,0,0xffffffff);\n      iVar5 = (int)uVar6;\n    }\n    else {\n      bVar3 = ((byte)this[0x10] & 1) != 0;\n      pKVar2 = this + 0x11;\n      if (bVar3) {\n        pKVar2 = *(KeyDescriptor **)(this + 0x20);\n      }\n      uVar1 = (uint)((byte)this[0x10] >> 1);\n      if (bVar3) {\n        uVar1 = *(uint *)(this + 0x18);\n      }\n      uVar6 = AParcel_writeString(param_1,pKVar2,uVar1);\n      iVar5 = (int)uVar6;\n    }\n    if (iVar5 == 0) {\n      if (this[0x48] == (KeyDescriptor)0x0) {\n        uVar6 = 0;\n        iVar5 = -1;\n      }\n      else {\n        uVar6 = *(undefined8 *)(this + 0x30);\n        iVar5 = *(int *)(this + 0x38) - (int)uVar6;\n      }\n      uVar6 = AParcel_writeByteArray(param_1,uVar6,iVar5);\n      if ((int)uVar6 == 0) {\n        iVar5 = AParcel_getDataPosition(param_1);\n        AParcel_setDataPosition(param_1,iVar4);\n        AParcel_writeInt32(param_1,iVar5 - iVar4);\n        AParcel_setDataPosition(param_1,iVar5);\n        uVar6 = 0;\n      }\n    }\n  }\n  return uVar6;\n}\n\n"
+    },
+    "xrefs": {
+      "status": "ok",
+      "incoming_scope": "function entry",
+      "outgoing_scope": "instructions in the function body",
+      "data": {
+        "incoming": [
+          {
+            "from": "Entry Point",
+            "to": "ram:0011a1e8",
+            "type": "EXTERNAL",
+            "source": "DEFAULT",
+            "operand": -1
+          },
+          {
+            "from": "ram:001210d0",
+            "to": "ram:0011a1e8",
+            "type": "DATA",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011be6c",
+            "to": "ram:0011a1e8",
+            "type": "COMPUTED_CALL",
+            "source": "ANALYSIS",
+            "operand": 0
+          },
+          {
+            "from": "ram:00108fb4",
+            "to": "ram:0011a1e8",
+            "type": "INDIRECTION",
+            "source": "ANALYSIS",
+            "operand": 0
+          },
+          {
+            "from": "ram:0010b7d4",
+            "to": "ram:0011a1e8",
+            "type": "DATA",
+            "source": "ANALYSIS",
+            "operand": 0
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "ram:0011a1e8",
+            "to": "Stack[-0x30]",
+            "type": "WRITE",
+            "source": "ANALYSIS",
+            "operand": 2
+          },
+          {
+            "from": "ram:0011a1ec",
+            "to": "Stack[-0x20]",
+            "type": "WRITE",
+            "source": "ANALYSIS",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a1f0",
+            "to": "Stack[-0x10]",
+            "type": "WRITE",
+            "source": "ANALYSIS",
+            "operand": 2
+          },
+          {
+            "from": "ram:0011a204",
+            "to": "ram:0011b980",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a214",
+            "to": "ram:0011b9e0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a218",
+            "to": "ram:0011a2ec",
+            "type": "CONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a224",
+            "to": "ram:0011b9e0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a228",
+            "to": "ram:0011a2ec",
+            "type": "CONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a234",
+            "to": "ram:0011b9f0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a238",
+            "to": "ram:0011a2ec",
+            "type": "CONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a240",
+            "to": "ram:0011a274",
+            "type": "CONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a268",
+            "to": "ram:0011bbc0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a26c",
+            "to": "ram:0011a2ec",
+            "type": "CONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a270",
+            "to": "ram:0011a288",
+            "type": "UNCONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a280",
+            "to": "ram:0011bbc0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a284",
+            "to": "ram:0011a2ec",
+            "type": "CONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a28c",
+            "to": "ram:0011a2a4",
+            "type": "CONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a2a0",
+            "to": "ram:0011a2b0",
+            "type": "UNCONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a2b0",
+            "to": "ram:0011bae0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a2b4",
+            "to": "ram:0011a2ec",
+            "type": "CONDITIONAL_JUMP",
+            "source": "DEFAULT",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a2bc",
+            "to": "ram:0011b980",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a2cc",
+            "to": "ram:0011b9b0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a2d8",
+            "to": "ram:0011b9e0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a2e4",
+            "to": "ram:0011b9b0",
+            "type": "UNCONDITIONAL_CALL",
+            "source": "DEFAULT",
+            "operand": 0
+          },
+          {
+            "from": "ram:0011a2ec",
+            "to": "Stack[-0x10]",
+            "type": "READ",
+            "source": "ANALYSIS",
+            "operand": 2
+          },
+          {
+            "from": "ram:0011a2f0",
+            "to": "Stack[-0x20]",
+            "type": "READ",
+            "source": "ANALYSIS",
+            "operand": 1
+          },
+          {
+            "from": "ram:0011a2f4",
+            "to": "Stack[-0x30]",
+            "type": "DATA",
+            "source": "ANALYSIS",
+            "operand": 0
+          }
+        ],
+        "incoming_truncated": false,
+        "outgoing_truncated": false
+      }
+    },
+    "strings": {
+      "status": "ok",
+      "data": []
+    }
+  }
+}
